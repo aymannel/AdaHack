@@ -32,8 +32,22 @@ A peer-to-peer payment system that uses NFC to initiate bank-to-bank transfers d
 
 **Sponsor Integrations:**
 * How are we going to use our sponsor's tech stacks?
-* Google Cloud infrastructure? Mollie payment processing
+* Google Cloud infrastructure? 
+* Mollie payment processing - they would be used to create and handle a payment session
+
 
 **Revenue Streams:**
 * Deposits in app earn interest
 * Deposits come from people who opt to 'pay later'
+
+### SETUP
+start the service
+```bash
+# development
+fastapi dev --host 127.0.0.1 --port 8000 service.py
+
+# production
+uvicorn service:app --host 127.0.0.1 --port 8000
+
+ngrok ///
+```
