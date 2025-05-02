@@ -3,6 +3,8 @@
 **Problem:**
 Casual debts among friends (like rounds at the pub) often go unpaid because there’s no frictionless, fee-free way to settle them. Existing contactless payment systems rely on acquiring banks, introducing fees and unnecessary intermediaries.
 
+![Acquirers](figures/acquirers.png)
+
 **Goal:**
 Make casual debt settlement intuitive, fee-free, and as easy as tapping a sticker.
 
@@ -29,7 +31,6 @@ A peer-to-peer payment system that uses NFC to initiate bank-to-bank transfers d
 * Don't have time to set up notificaiton service
 * This is why we are simulating the notifications
 
-
 **Sponsor Integrations:**
 * How are we going to use our sponsor's tech stacks?
 * Google Cloud infrastructure? Mollie payment processing
@@ -37,3 +38,4 @@ A peer-to-peer payment system that uses NFC to initiate bank-to-bank transfers d
 **Revenue Streams:**
 * Deposits in app earn interest
 * Deposits come from people who opt to 'pay later'
+
