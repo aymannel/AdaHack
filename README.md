@@ -16,7 +16,7 @@ A peer-to-peer payment system that uses NFC to initiate bank-to-bank transfers d
 
 **Example Scenarios:**
 1. A taps B’s NFC, sends £10.
-2. B scans A’s NFC, requests £10; A gets a notification to approve/decline.
+2. B scans A’s NFC, requests £10; A gets a notification to approve/decline/pay later.
 
 **Core Requirements:**
 * Physical NFC sticker or phone-based tag
@@ -24,3 +24,16 @@ A peer-to-peer payment system that uses NFC to initiate bank-to-bank transfers d
 * NFC ID is paired with the user’s device/account
 * Linked payment and receiving methods
 
+**Limitations:**
+* Don't have access to physical NFCs
+* Don't have time to set up notificaiton service
+* This is why we are simulating the notifications
+
+
+**Sponsor Integrations:**
+* How are we going to use our sponsor's tech stacks?
+* Google Cloud infrastructure? Mollie payment processing
+
+**Revenue Streams:**
+* Deposits in app earn interest
+* Deposits come from people who opt to 'pay later'
