@@ -7,7 +7,6 @@ from typing import Dict, List, Optional, Union
 import httpx
 from fastapi import FastAPI, File, HTTPException, Response, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from openai import OpenAI
 from pydantic import BaseModel
 
 from config import config
@@ -26,7 +25,25 @@ app.add_middleware(
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
-    return {"status": "healthy", "model": "gpt-4o"}
+    return {"status": "healthy", "message": "NFPay server is running!"}
+
+
+@app.post("/approve")
+async def approve():
+    """Approve check endpoint"""
+    return {"status": "approve", "message": "NFPay server is running!"}
+
+
+@app.post("/decline")
+async def decline():
+    """Decline endpoint"""
+    return {"status": "decline", "message": "NFPay server is running!"}
+
+
+@app.post("/defer")
+async def defer():
+    """Defer check endpoint"""
+    return {"status": "defer", "message": "NFPay server is running!"}
 
 
 if __name__ == "__main__":
