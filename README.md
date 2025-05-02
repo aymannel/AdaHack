@@ -51,3 +51,7 @@ uvicorn service:app --host 127.0.0.1 --port 8000
 
 ngrok ///
 ```
+
+**Demo workflow:**
+1. A scans B's QR code - we put the QR, sends £10.
+2. B scans A’s NFC, requests £10; A gets a notification to approve/decline/pay later.
